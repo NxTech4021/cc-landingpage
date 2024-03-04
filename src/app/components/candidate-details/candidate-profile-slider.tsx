@@ -37,7 +37,7 @@ const CandidateProfileSlider = () => {
   const portfolio_data = [port_1, port_2, port_3, port_4];
   return (
     <Slider {...slider_setting} className="candidate-portfolio-slider">
-      {portfolio_data.map((img, i) => (
+      {/* {portfolio_data.map((img, i) => (
         <div className="item" key={i}>
           <a href="#" className="w-100 d-blok">
             <Image
@@ -48,7 +48,7 @@ const CandidateProfileSlider = () => {
             />
           </a>
         </div>
-      ))}
+      ))} */}
     </Slider>
   );
 };
