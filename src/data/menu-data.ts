@@ -13,6 +13,8 @@ const menu_data: IMenuData[] = [
       { link: "/home-5", title: "Home 5" },
       { link: "/home-6", title: "Home 6" },
       { link: "/home-7", title: "Home 7" },
+      { link: "/home-8", title: "cult 1" },
+      { link: "/home-9", title: "cult 2" },
     ],
   },
   {

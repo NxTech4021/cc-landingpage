@@ -6,16 +6,17 @@
 // Global Style
 ::-webkit-scrollbar{ width: 5px; }
 ::-webkit-scrollbar-track { background: #fff;}
-::-webkit-scrollbar-thumb { background: $color-two;border-radius: 0;}
+::-webkit-scrollbar-thumb { background: #1340FF;border-radius: 0;}
 body {
   font-family: var(--gorditas-font);
   font-weight: normal;
   font-size: 16px;
   position: relative;
   color: $text-color;
+  background-color: #F4F4F4;
 }
 .main-page-wrapper {
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 .h1,
 h1,
@@ -234,14 +235,14 @@ hr {opacity: 0.09; margin: 5px 0;}
 .btn-five {
   font-weight: 500;
   padding: 13px 26px;
-  min-width: 150px;
+  min-width: 200px;
   text-align: center;
   border-radius: 50px;
   color: #fff;
-  background: $color-three;
+  background: #1340FF;
   @include transition(0.3s);
   &:hover {
-    background: $color-one;
+    background: #061c81;
     color: #fff;
   }
 }
@@ -286,20 +287,17 @@ hr {opacity: 0.09; margin: 5px 0;}
 .btn-seven {
   font-weight: 500;
   padding: 13px 28px;
-  min-width: 150px;
+  min-width: 250px;
   text-align: center;
   border-radius: 50px;
-  color: $color-three;
-  border: 1px solid $color-three;
+  color: #1340FF;
+  background: white;
+  border: none;
   @include transition(0.3s);
   &:hover {
-    background: $color-one;
-    border-color: $color-one;
-    color: #fff;
+    background: #c1caee;
+    color: #1340FF;
   }
-}
-.btn-seven.border6 {
-  border-radius: 6px;
 }
 .btn-eight {
   display: inline-block;
@@ -358,10 +356,13 @@ hr {opacity: 0.09; margin: 5px 0;}
 // Title Style
 .title-one h2 {
   color: $heading;
+  display: inline;
+  text-align: center;
   margin: 0;
   &.main-font {
     font-family: var(--gorditas-font);
     font-size: 60px;
+    text-align: center;
     color: #000;
     line-height: 1.333em;
     &.color-blue {
@@ -370,15 +371,18 @@ hr {opacity: 0.09; margin: 5px 0;}
   }
 }
 .title-one span img {
+  text-align: center;
   top:-28px;
   right: -112px;
 }
 .title-one .line {
+  text-align: center;
   height: 1px;
   background: #E5E5E5;
   flex: 1 1 auto!important;
 }
 .title-one .sub-title {
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba($color: #000000, $alpha: 0.3);

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -41,12 +41,6 @@ const expert_data: {
     name: "John Doe",
     title: "Marketing Expert",
   },
-  {
-    id: 5,
-    user: user_5,
-    name: "Elizabeth Foster",
-    title: "UI/UX Designer",
-  },
 ];
 
 // slick slider setting
@@ -54,7 +48,7 @@ const slider_setting = {
   dots: false,
   arrows: false,
   centerPadding: "0px",
-  centerMode:false,
+  centerMode: false,
   slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: false,
@@ -89,20 +83,13 @@ const ExpertsOne = () => {
     <section className="expert-section-one position-relative mt-180 xl-mt-150 lg-mt-100">
       <div className="container position-relative">
         <div className="row">
-          <div className="col-md-7">
-            <div className="title-one text-center text-md-start mb-65 md-mb-50 wow fadeInUp" data-wow-delay="0.3s">
-              <h2>
-                Find the best{" "}
-                <span className="position-relative">
-                  talented{" "}
-                  <Image
-                    src={shape}
-                    alt="shape"
-                    className="lazy-img shapes shapes"
-                  />
-                </span>{" "}
-                expert in jobi.
-              </h2>
+          <div className="col-md">
+            <div
+              className="title-one text-start text-md-start wow fadeInUp"
+              data-wow-delay="0.3s"
+                style={{marginBottom:"40px"}}
+            >
+              <h1 style={{textAlign:"center"}}>We Match you to brands</h1>
             </div>
           </div>
         </div>
@@ -116,7 +103,12 @@ const ExpertsOne = () => {
             <div key={item.id} className="item">
               <div className="card-style-three text-center">
                 <div className="img-meta mb-40 lg-mb-20">
-                  <Image src={item.user} alt="user-img" className="m-auto" style={{height:'auto'}} />
+                  <Image
+                    src={item.user}
+                    alt="user-img"
+                    className="m-auto"
+                    style={{ height: "auto" }}
+                  />
                 </div>
                 <a href="#" className="name text-md fw-500 text-dark">
                   {item.name}
@@ -126,7 +118,7 @@ const ExpertsOne = () => {
             </div>
           ))}
         </Slider>
-
+{/* 
         <ul className="slider-arrows slick-arrow-one d-flex justify-content-center style-none sm-mt-30">
           <li className="prev_a slick-arrow" onClick={sliderPrev}>
             <i className="bi bi-arrow-left"></i>
@@ -134,7 +126,7 @@ const ExpertsOne = () => {
           <li className="next_a slick-arrow" onClick={sliderNext}>
             <i className="bi bi-arrow-right"></i>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

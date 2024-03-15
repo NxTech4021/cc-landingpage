@@ -32,8 +32,8 @@ const FancyBannerThree = ({ style_2 = false }: { style_2?: boolean }) => {
                     <i className="bi bi-play-fill"></i>
                   </a>
                   <div className="title-one mt-35 lg-mt-30 mb-30 lg-mb-20">
-                    <h2 className="fw-600 text-white">Let’s get started
-                      It’s <span style={{ color: '#00BF58' }}>simple.</span></h2>
+                    <h2 className="fw-600 text-white">how it
+                   <span style={{ color: '#00BF58' }}>works.</span></h2>
                   </div>
                   <p className="text-white">Get access to our top 1% talent as well as a complete set of hybrid workforce management tools.</p>
                 </div>
@@ -42,17 +42,7 @@ const FancyBannerThree = ({ style_2 = false }: { style_2?: boolean }) => {
 
             <div className="bottom-content position-relative">
               <div className="row gx-xxl-5 justify-content-between">
-                {content_data.map((c, i) => (
-                  <div key={i} className="col-lg-4">
-                    <div className="d-flex mt-20 wow fadeInUp">
-                      <div className="count fw-500 rounded-circle text-white d-flex align-items-center justify-content-center">{i + 1}</div>
-                      <div className="ps-4 text">
-                        <div className="fw-500 text-white text-lg mb-10">{c.title}</div>
-                        <Link href='/register' className="fw-500 text-uppercase">{c.subtitle}</Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+               
               </div>
             </div>
           </div>
@@ -69,28 +59,15 @@ const FancyBannerThree = ({ style_2 = false }: { style_2?: boolean }) => {
                     <i className="bi bi-play-fill"></i>
                   </a>
                   <div className="title-one mt-25 mb-25 lg-mb-20">
-                    <h2 className="text-white main-font">Let’s get started It’s <span style={{ color: '#00BF58' }}>simple.</span></h2>
-                  </div>
-                  <p className="text-white text-md">Get access to our top 1% talent as well as a complete set of hybrid workforce management tools.</p>
+                  <h2 className="fw-600 text-white">how it<br/>
+                   <span>works.</span></h2></div>
+                  <p className="text-white text-md">We take the hassle out of creator marketing. </p><br/>
+                  <p className="text-white text-md">With a simple monthly subscription, here’s how we bridge brands and agencies with creators to establish genuine relationships with customers.</p>
                 </div>
               </div>
             </div>
 
-            <div className="row gx-xl-5 justify-content-between">
-              {content_data.map((c, i) => (
-                <div key={i} className="col-lg-4 d-flex">
-                  <div className="card-style-nine w-100 d-flex mt-20 wow fadeInUp">
-                    <div className="icon rounded-circle d-flex align-items-center justify-content-center">
-                      <Image src={c.icon} alt="icon" className="lazy-img" />
-                    </div>
-                    <div className="ps-4 text d-flex flex-column">
-                      <div className="text-lg mb-10">{c.title}</div>
-                      <a href="#" className="fw-500 text-uppercase">{c.subtitle}</a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        
           </div>
         </div>
       </section>}

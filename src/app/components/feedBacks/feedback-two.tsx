@@ -61,7 +61,7 @@ const slider_setting = {
   dots: true,
   arrows: false,
   centerPadding: '0px',
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 300000,
@@ -88,35 +88,28 @@ const FeedbackTwo = () => {
         <div className="row">
           <div className="col-lg-4">
             <div className="title-one mt-50 wow fadeInUp" data-wow-delay="0.3s">
-              <div className="sub-title">TESTIMONIAL</div>
-              <h2 className="fw-600">Clients loves jobi.</h2>
+             
+              <h1 className="fw-600" style={{color:"white"}}>hear from our users.</h1>
             </div>
-            <div className="fw-500 rating-title mt-80 lg-mt-40 mb-5 wow fadeInUp" data-wow-delay="0.4s">A+ Rating</div>
-            <p className="wow fadeInUp" data-wow-delay="0.5s">Avg rating 4.8 makes us best market place.</p>
+            
           </div>
 
           <div className="col-lg-8 ms-auto">
-            <div className="slider-wrapper ms-lg-5">
+            <div className="slider-wrapper ms-lg">
               <div className="row feedback-slider-two">
                 <Slider {...slider_setting}>
                   {review_data.map(r => (
                     <div key={r.id} className="item m-0">
                       <div className="feedback-block-two">
-                        <div className="review fw-500">{r.title}</div>
-                        <ul className="style-none d-flex rating">
-                          <li><a href="#"><i className="bi bi-star-fill"></i></a></li>
-                          <li><a href="#"><i className="bi bi-star-fill"></i></a></li>
-                          <li><a href="#"><i className="bi bi-star-fill"></i></a></li>
-                          <li><a href="#"><i className="bi bi-star-fill"></i></a></li>
-                          <li><a href="#"><i className="bi bi-star-fill"></i></a></li>
-                        </ul>
-                        <blockquote className="mt-40 lg-mt-20 mb-50 lg-mb-30 text-md text-dark">{r.desc}</blockquote>
+                        
+                      
+                        <blockquote className="mt-50 lg-mt-50 mb-50 lg-mb-50 text-lg ">{r.desc}</blockquote>
                         <div className="block-footer d-flex align-items-center justify-content-between pt-35 lg-pt-20">
                           <div className="d-flex align-items-center">
-                            <Image src={r.user} alt="" className="author-img rounded-circle" />
+                            
                             <div className="ms-3">
-                              <div className="name fw-500 text-dark">{r.name}</div>
-                              <span className="opacity-50">{r.location}</span>
+                              <div className="name fw-500 text-light">{r.name}</div>
+                             
                             </div>
                           </div>
                           <Image src={shape} alt="shape" className="quote-icon" />

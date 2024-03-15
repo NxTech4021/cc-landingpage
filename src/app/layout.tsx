@@ -2,6 +2,7 @@ import "./globals.scss";
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
+import { Lora } from "next/font/google";
 import BackToTopCom from "./components/common/back-to-top-com";
 import { Providers } from "@/redux/provider";
 
@@ -36,6 +37,11 @@ const garamond = EB_Garamond({
   subsets: ["latin"],
   variable: "--eb_garamond-font",
 });
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--lora-font",
+});
 
 export const metadata: Metadata = {
   title: "Jobi - Job Portal & Job Board React NextJS Template",
@@ -54,7 +60,7 @@ export default function RootLayout({
       </head>
       <body
         suppressHydrationWarning={true}
-        className={`${gordita.variable} ${garamond.variable}`}
+        className={`${gordita.variable} ${gordita.variable}`}
       >
         <Providers>{children}</Providers>
         <BackToTopCom />
